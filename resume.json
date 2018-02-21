@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Richard Roncancio",
-    "label": "Front end Developer",
+    "label": "Computer Science Engineer",
     "picture": "",
     "email": "richard.batusai@gmail.com",
-    "phone": "(+57) 301 5000 301",
-    "website": "",
+    "phone": "(+57) 301-5000391",
+    "website": "https://www.linkedin.com/in/richard-roncancio-6034b651/",
     "summary": "Computer science engineer with 6+ years of experience in front end development with a deep knowledge in html, css and the javascript programming language. I enjoy learning as much as possible, share the knowledge with other team members and solve hard to solve problems in order to meet the user requirements.",
     "location": {
       "address": "Calle 51B # 34 - 06",
@@ -21,9 +21,9 @@
         "url": "https://twitter.com/Sr_Batusai"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "LinkedIn",
+        "username": "richard-roncancio",
+        "url": "https://www.linkedin.com/in/richard-roncancio-6034b651/"
       }
     ]
   },
@@ -31,41 +31,51 @@
     {
       "company": "Koombea",
       "position": "Front end Developer",
-      "website": "http://www.koombea.com",
-      "startDate": "2011-06-01",
-      "endDate": "present",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "website": "https://www.koombea.com",
+      "startDate": "2011-06-15",
+      "endDate": "Current",
+      "summary": "Started as a junior front end engineer among my responsibilities are the development of functional user interfaces with HTML, CSS and javascript, front end implementation on ruby on rails apps using erb and haml, building full featured client side applications with several different libraries and frameworks such as Backbone.js and Marionette, ember.js, angular.js and React.js meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways. ",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Built our base css starting boilerplate in sass (scss), using SMACSS metodology and following the BEM naming convention. ",
+        "Successfully lead and built several web pages and client side applications with html, css and javascript, also using several libraries such as AngularJS and React.js.",
+        "Learned and introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.",
+        "Helped to evaluate and train several new hires for the front end department."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "organization": "BarranquillaJS",
+      "position": "Organizer",
+      "website": "https://www.meetup.com/es-ES/BarranquillaJS/",
+      "startDate": "2015-03-04",
+      "endDate": "Today",
+      "summary": "Barranquilla's first javascript community for people to learn and share and the javascript programming language",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Organizer and speaker"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
+      "institution": "Universidad del Caribe",
+      "area": "Computer Science Engineering",
+      "studyType": "",
+      "startDate": "2011-06-15",
+      "endDate": "2016-06-30",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Kyle Simpson",
+      "area": "Javascript Training",
+      "studyType": "",
+      "startDate": "2015",
+      "endDate": "2016",
+      "gpa": "",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "Rethinking Async, Functional JS and Node Fundamentals",
+        "Advanced JavaScript"
       ]
     }
   ],
@@ -77,54 +87,45 @@
       "summary": "There is no spoon."
     }
   ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
+  "publications": [],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Front end Development",
+      "level": "",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Javascript Programming (es2015+) and browser API's.",
+        "Knowledge of web libraries such as AngularJS, emberJs, React, Redux, MobX.",
+        "Semantic HTML.",
+        "SASS, CSS architecture, postCSS, BEM.",
+        "Javascript Tooling including Webpack, BabelJs.",
+        "Mobile development with React Native.",
+        "Functional Programming"
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native Speaker"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "name": "Sports",
+      "keywords": []
+    },
+    {
+      "name": "VideoGames",
+      "keywords": []
+    },
+    {
+      "name": "Movies",
+      "keywords": []
     }
   ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+  "references": []
 }
