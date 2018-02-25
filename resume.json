@@ -16,6 +16,11 @@
     },
     "profiles": [
       {
+        "network": "GitHub",
+        "username": "batusai513",
+        "url": "https://github.com/batusai513"
+      },
+      {
         "network": "Twitter",
         "username": "Sr_Batusai",
         "url": "https://twitter.com/Sr_Batusai"
@@ -67,7 +72,7 @@
       "website": "https://www.meetup.com/es-ES/BarranquillaJS/",
       "startDate": "2015-03-04",
       "endDate": "2018",
-      "summary": "Barranquilla's first javascript community for people to learn and share and the javascript programming language",
+      "summary": "Barranquilla's first javascript community for people wanting to learn and share about javascript",
       "highlights": [
         "founder and speaker"
       ]
@@ -103,8 +108,8 @@
       "name": "Tech Stack",
       "level": "",
       "keywords": [
-        "Javascript Programming (es2015+) and browser API's.",
-        "Browser API's",
+        "Javascript Programming (es2015+)",
+        "Browser APIs",
         "React",
         "redux",
         "Mobx",
