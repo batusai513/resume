@@ -34,11 +34,11 @@
       "website": "https://www.koombea.com",
       "startDate": "2014-06-15",
       "endDate": "2018",
-      "summary": "My responsibilities are the development of functional user interfaces and client side applications, front end implementation on ruby on rails apps using erb and haml, building full featured client side applications and meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.",
+      "summary": "My responsibilities are the development of functional user interfaces, integrations with Ruby on Rails using erb and haml, Research and implementation of new technologies for our front end department, training of new front end hires and building full featured client side applications meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.",
       "highlights": [
         "Built our first Mobile Application using React Native",
-        "Built our base css starting boilerplate in sass (scss), using SMACSS metodology and following the BEM naming convention. ",
-        "Successfully lead and built several client side applications with using javascript libraries and frameworks such as AngularJS and React.js.",
+        "Built our base css starting boilerplate in sass (scss), using SMACSS metodology and following the BEM naming convention, giving us the tools to create user interfaces in a simpler, reusable, consistent and scalable way.",
+        "Successfully lead and built several client side applications with using javascript libraries and frameworks such as React.js. and AngularJS.",
         "Learned and introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.",
         "Helped to evaluate and train several new hires for the front end department."
       ]
@@ -55,7 +55,7 @@
         "Created websites using Wordpress CMS.",
         "Integrated HTML markup to Ruby on Rails Applications using erb and haml.",
         "Created our first responsive using the latest techniques from that time",
-        "Created the baselines for building responsive websites",
+        "Created the baselines for building responsive websites.",
         "Started to investigate new tools to integrate into the Front end stack and workflow."
       ]
     }
@@ -109,8 +109,10 @@
         "redux",
         "Mobx",
         "React Native",
+        "Vue.js",
         "Webpack",
         "Babel",
+        "GraphQL",
         "Functional Programming",
         "Ember",
         "AngularJS",
@@ -119,6 +121,7 @@
         "BEM",
         "PostCSS",
         "SASS",
+        "Styled Components",
         "CSS Architecure"
       ]
     }
