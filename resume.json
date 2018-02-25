@@ -6,7 +6,7 @@
     "email": "richard.batusai@gmail.com",
     "phone": "(+57) 301-5000391",
     "website": "https://www.linkedin.com/in/richard-roncancio-6034b651/",
-    "summary": "Computer science engineer with 6+ years of experience in front end development with a deep knowledge in html, css and the javascript programming language. I enjoy learning as much as possible, share the knowledge with other team members and solve hard to solve problems in order to meet the user requirements.",
+    "summary": "Computer science engineer with 6+ years of experience in front end development with a deep knowledge in html, css and the javascript programming language. I enjoy learning as much as possible, share the knowledge with other team members and work in exciting new challenges.",
     "location": {
       "address": "Calle 51B # 34 - 06",
       "postalCode": "080012",
@@ -30,29 +30,46 @@
   "work": [
     {
       "company": "Koombea",
-      "position": "Front end Developer",
+      "position": "Sr. Front end Developer",
       "website": "https://www.koombea.com",
-      "startDate": "2011-06-15",
+      "startDate": "2014-06-15",
       "endDate": "2018",
-      "summary": "Started as a junior front end engineer among my responsibilities are the development of functional user interfaces with HTML, CSS and javascript, front end implementation on ruby on rails apps using erb and haml, building full featured client side applications with several different libraries and frameworks such as Backbone.js and Marionette, ember.js, angular.js and React.js meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways. ",
+      "summary": "My responsibilities are the development of functional user interfaces and client side applications, front end implementation on ruby on rails apps using erb and haml, building full featured client side applications and meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.",
       "highlights": [
+        "Built our first Mobile Application using React Native",
         "Built our base css starting boilerplate in sass (scss), using SMACSS metodology and following the BEM naming convention. ",
-        "Successfully lead and built several web pages and client side applications with html, css and javascript, also using several libraries such as AngularJS and React.js.",
+        "Successfully lead and built several client side applications with using javascript libraries and frameworks such as AngularJS and React.js.",
         "Learned and introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.",
         "Helped to evaluate and train several new hires for the front end department."
+      ]
+    },
+    {
+      "company": "Koombea",
+      "position": "Jr. Front end Developer",
+      "website": "https://www.koombea.com",
+      "startDate": "2012-01-15",
+      "endDate": "2014-06-15",
+      "summary": "Started as a junior developer my personal goal was to learn as much as possible and apply that knowledge to build functional websites and to create user interfaces for applications.",
+      "highlights": [
+        "Built several Marketing sites in HTML, CSS and Javsript (JQuery).",
+        "Created websites using Wordpress CMS.",
+        "Integrated HTML markup to Ruby on Rails Applications using erb and haml.",
+        "Created our first responsive using the latest techniques from that time",
+        "Created the baselines for building responsive websites",
+        "Started to investigate new tools to integrate into the Front end stack and workflow."
       ]
     }
   ],
   "volunteer": [
     {
       "organization": "BarranquillaJS",
-      "position": "Organizer",
+      "position": "Founder",
       "website": "https://www.meetup.com/es-ES/BarranquillaJS/",
       "startDate": "2015-03-04",
       "endDate": "2018",
       "summary": "Barranquilla's first javascript community for people to learn and share and the javascript programming language",
       "highlights": [
-        "Organizer and speaker"
+        "founder and speaker"
       ]
     }
   ],
@@ -83,16 +100,26 @@
   "publications": [],
   "skills": [
     {
-      "name": "Front end Development",
+      "name": "Tech Stack",
       "level": "",
       "keywords": [
         "Javascript Programming (es2015+) and browser API's.",
-        "Knowledge of web libraries such as AngularJS, emberJs, React, Redux, MobX.",
-        "Semantic HTML.",
-        "SASS, CSS architecture, postCSS, BEM.",
-        "Javascript Tooling including Webpack, BabelJs.",
-        "Mobile development with React Native.",
-        "Functional Programming"
+        "Browser API's",
+        "React",
+        "redux",
+        "Mobx",
+        "React Native",
+        "Webpack",
+        "Babel",
+        "Functional Programming",
+        "Ember",
+        "AngularJS",
+        "HTML5",
+        "CSS3",
+        "BEM",
+        "PostCSS",
+        "SASS",
+        "CSS Architecure"
       ]
     }
   ],
