@@ -80,7 +80,7 @@
   ],
   "education": [
     {
-      "institution": "Universidad del Caribe",
+      "institution": "Universidad Autonoma del Caribe",
       "area": "Computer Science Engineering",
       "studyType": "",
       "startDate": "2011-06-15",
@@ -117,7 +117,7 @@
         "Vue.js",
         "Webpack",
         "Babel",
-        "GraphQL",
+        "Apolo Client",
         "Functional Programming",
         "Ember",
         "AngularJS",
