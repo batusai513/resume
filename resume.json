@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Richard Roncancio",
-    "label": "Computer Science Engineer",
+    "label": "Systems engineer",
     "picture": "",
     "email": "richard.batusai@gmail.com",
-    "phone": "(+57) 301-5000391",
+    "phone": "(+49) 01525-6841771",
     "website": "https://www.linkedin.com/in/richard-roncancio-6034b651/",
-    "summary": "Computer science engineer with 6+ years of experience in front end development with a deep knowledge in html, css and the javascript programming language. I enjoy learning as much as possible, share the knowledge with other team members and work in exciting new challenges.",
+    "summary": "A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges.",
     "location": {
-      "address": "Calle 51B # 34 - 06",
-      "postalCode": "080012",
-      "city": "Barranquilla",
-      "countryCode": "CO",
-      "region": "Atlantico"
+      "address": "Reichenberger Str. 153",
+      "postalCode": "10999",
+      "city": "Berlin",
+      "countryCode": "DE",
+      "region": "Berlin"
     },
     "profiles": [
       {
@@ -33,6 +33,25 @@
     ]
   },
   "work": [
+    {
+      "company": "Auto1",
+      "position": "Sr. Front end Developer",
+      "website": "https://www.auto1.com/en/home",
+      "startDate": "2018-10-15",
+      "endDate": "ongoing",
+      "summary": "Among my responsabilities I have to work on new features for all the applications in the http://wirkaufendeinauto.de spectrum and the internal tools, analyze and optimize the performance and load times and general bug fixing.",
+      "highlights": [
+        "Lead the slim funnels initiative to migrate our old framework and tools to build form funnels for A/B experiments to a more flexible codebase. This new codebase resulted in a decrease of the development time invested in creating new experiments and funnels and a reduction of about 60% smaller bundle size of the generated pages",
+        "Lead the migration of our newer codebases (2 monorepos and about 30 packages) from vanilla Javascript to Typescript, resulting in having up to date code, less runtime errors, code editor autocomplete and overall a much better developer experience",
+        "Migrated one of our more complicated codebases and logic used by our main user facing forms to a finite state machine (statechart), this process involved analysing the previous implementation and logic, design and implement the machine using Xstate, build components (form, fields, etc) backed by this new machine. This end up in a more flexible form that allows to add/remove fields in a more simple way",
+        "General maintanance of our codebases, updating runtimes and external packages to be up to date, optimisations of our bundler (webpack) configurations to make our JS and CSS bundles as smaller as they can be",
+        "Designed and built our design system based on React components and SASS stylesheets using BEM naming convention, and PostCSS configurations with PurgeCSS on the application side to remove unused CSS, this resulted in about 60% smaller css bundles",
+        "Designed and built CLI tools to increase the developer experience and efficiency by automating several repeating tasks",
+        "Helped built the new user account dashboard, a completely new React and GraphQL application with localization and internationalization.",
+        "Implemented user authentication and authorization using JWT access and refresh tokens",
+        "Analize the current application and SEO pages and look for opportunities to optimize performance, load times and and time to interactive leading to several tweaks to the webpack that shrinked the bundle sizes by almost 50%, removed unused JS and css and implementing responsive images strategies."
+      ]
+    },
     {
       "company": "Koombea",
       "position": "Sr. Front end Developer",
@@ -73,9 +92,7 @@
       "startDate": "2015-03-04",
       "endDate": "2018",
       "summary": "Barranquilla's first javascript community for people wanting to learn and share about javascript",
-      "highlights": [
-        "founder and speaker"
-      ]
+      "highlights": ["founder and speaker"]
     }
   ],
   "education": [
@@ -105,30 +122,44 @@
   "publications": [],
   "skills": [
     {
-      "name": "Tech Stack",
-      "level": "",
+      "name": "Frontend",
+      "level": "Senior",
       "keywords": [
-        "Javascript Programming (es2015+)",
+        "Javascript",
+        "Typescript",
         "Browser APIs",
         "React",
+        "NextJS",
+        "Remix",
         "redux",
-        "Mobx",
         "React Native",
         "Vue.js",
         "Webpack",
+        "Vite",
         "Babel",
-        "Apolo Client",
+        "Apolo",
         "Functional Programming",
-        "Ember",
-        "AngularJS",
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "BEM",
         "PostCSS",
         "SASS",
-        "Styled Components",
-        "CSS Architecure"
+        "Tailwind",
+        "CSS Architecure",
+        "GraphQL",
+        "Prisma",
+        "Git"
       ]
+    },
+    {
+      "keywords": ["Node", "Postgres"],
+      "level": "Intermediate",
+      "name": "Backend"
+    },
+    {
+      "keywords": ["JenkinsCI", "Docker", "Groovy", "Rust"],
+      "level": "Knowledge",
+      "name": "Others"
     }
   ],
   "languages": [
@@ -143,7 +174,7 @@
   ],
   "interests": [
     {
-      "name": "Sports",
+      "name": "Movies",
       "keywords": []
     },
     {
@@ -151,7 +182,7 @@
       "keywords": []
     },
     {
-      "name": "Movies",
+      "name": "Sports",
       "keywords": []
     }
   ],
