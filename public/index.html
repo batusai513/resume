@@ -1,486 +1,1165 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <title>Richard Roncancio</title>
-    <meta name="description" content="A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
-    <style>:root {
-  /* Colors */
-  --primaryColor: #212529;
-  --secondaryColor: #95a5a6;
-  --accentColor: #f1c40f;
-  --linkColor: #2ecc71;
-  --mutedColor: #f4f6f6;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Richard Roncancio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
 
-  /* Typography */
-  --ratio: 1.25;
-  --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--ratio));
-  --scale2: calc(var(--scale1) * var(--ratio));
-  --scale3: calc(var(--scale2) * var(--ratio));
-  --scale4: calc(var(--scale3) * var(--ratio));
-  --scale5: calc(var(--scale4) * var(--ratio));
-}
-
-* {
-  box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-html {
-  font-size: 14px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-  color: var(--primaryColor);
-  display: grid;
-  font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start side-start]
-    minmax(min-content, 12em)
-    [side-end content-start]
-    minmax(min-content, 36em)
-    [main-end content-end]
-    1fr
-    [full-end];
-  grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
-}
-
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
+  line-height: 1;
 }
 
 ol,
 ul {
-  padding-left: 1em;
+  list-style: none;
 }
 
-li + li {
-  margin-top: 0.2em;
+blockquote,
+q {
+  quotes: none;
 }
 
-li::marker {
-  color: var(--mutedColor);
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
 }
 
 a {
-  color: var(--linkColor);
+  color: #0095ff;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
-a:focus,
 a:hover {
-  color: var(--accentColor);
+  color: #0c65a5;
+  text-decoration: underline;
 }
 
-h1,
-h2,
-h3,
-h5 {
-  font-weight: normal;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
 }
 
 h1 {
-  font-size: var(--scale5);
+  font-size: 2rem;
 }
 
 h2 {
-  color: var(--secondaryColor);
-  font-size: var(--scale4);
+  font-size: 1.67rem;
 }
 
 h3 {
-  color: var(--accentColor);
-  font-size: var(--scale3);
-  grid-column: side;
-  margin-bottom: 1rem;
+  font-size: 1.27rem;
 }
 
-h4 {
-  font-size: var(--scale2);
-}
-
-h5 {
-  font-size: var(--scale1);
-}
-
-h6 {
-  font-size: var(--scale0);
+em {
+  color: #757575;
 }
 
 blockquote {
-  border-left: 0.2em solid var(--mutedColor);
-  padding-left: 1em;
+  margin-bottom: 1em;
 }
 
-cite {
-  color: var(--secondaryColor);
-  font-style: inherit;
+strong {
+  font-weight: 700;
 }
 
-cite::before {
-  content: '— ';
+/* main container */
+
+#resume {
+  padding: 1.5rem;
 }
 
-.masthead {
-  background: var(--mutedColor);
-  display: inherit;
-  gap: inherit;
-  grid-column: full;
-  grid-template-columns: inherit;
-  padding: 4em 0;
-  row-gap: 0;
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
 }
 
-.masthead > *,
-section {
-  grid-column: main;
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
 }
 
-article > * + *,
-blockquote > * + * {
-  margin-top: 0.6em;
+#contact {
+  margin-top: 0.5rem;
 }
 
-.stack {
-  display: grid;
-  gap: 1.5em;
-}
-
-.grid-list {
-  display: grid;
-  gap: 1em;
-}
-
-.spaced-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.spaced-list:first-child::before {
-  border-bottom: 1px solid var(--mutedColor);
-  content: '';
-  flex-grow: 1;
-  margin: 0 1em;
-  order: 1;
-}
-
-.spaced-list > :nth-child(2) {
-  order: 2;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+#profiles .item {
   padding: 0;
 }
 
-.tag-list > li {
-  background: var(--mutedColor);
-  margin: 0 0.2em 0.2em 0;
-  padding: 0.2em 0.6em;
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-@media print, (min-width: 48em) {
-  h3 {
-    text-align: right;
-    margin-bottom: inherit;
-  }
+#header > div {
+  line-height: 1.5;
+}
 
-  .masthead > *,
-  section {
-    grid-column: content;
-  }
+#header > div > div {
+  margin-right: 1.2em;
+}
 
-  section {
-    display: contents;
-  }
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
 
-  .grid-list {
-    grid-template-columns: 1fr 1fr;
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 0.5rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
   }
 }
-</style>
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
   </head>
   <body>
-      <header class="masthead">
-          <h1>Richard Roncancio</h1>
-          <h2>Systems engineer</h2>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Richard Roncancio</h1>
+    			<h2 class="label">Systems engineer</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="address">Reichenberger Str. 153,</span>
+    			<span class="postalCode">10999,</span>
+    			<span class="city">Berlin,</span>
+    			<span class="region">Berlin</span>
+    			<span class="countryCode">DE</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="website">
+    				<span class="fas fa-external-link-alt"></span>
+    				<a class="hide-href-print" target="_blank" target="_blank" href="https://www.linkedin.com/in/richard-roncancio-6034b651/">https://www.linkedin.com/in/richard-roncancio-6034b651/</a>
+    			</div>
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:richard.batusai@gmail.com">richard.batusai@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fas fa-mobile-alt"></span>
+    				<a class="hide-href-print" href="tel:(+49) 01525-6841771">(+49) 01525-6841771</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/batusai513">batusai513</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-twitter twitter social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://twitter.com/Sr_Batusai">Sr_Batusai</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/richard-roncancio-6034b651/">richard-roncancio</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p>A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges.</p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Frontend
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>Advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Javascript</li>
+    				<li>Typescript</li>
+    				<li>Browser APIs</li>
+    				<li>React</li>
+    				<li>NextJS</li>
+    				<li>Remix</li>
+    				<li>redux</li>
+    				<li>React Native</li>
+    				<li>Vue.js</li>
+    				<li>Webpack</li>
+    				<li>Vite</li>
+    				<li>Babel</li>
+    				<li>Apolo</li>
+    				<li>Functional Programming</li>
+    				<li>HTML</li>
+    				<li>CSS</li>
+    				<li>BEM</li>
+    				<li>PostCSS</li>
+    				<li>SASS</li>
+    				<li>Tailwind</li>
+    				<li>CSS Architecure</li>
+    				<li>GraphQL</li>
+    				<li>Prisma</li>
+    				<li>Git</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Backend
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>Intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Node</li>
+    				<li>Postgres</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Others
+    			</h3>
+    			 
+    			<div class="level knowledge">
+    				<em>Knowledge</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>JenkinsCI</li>
+    				<li>Docker</li>
+    				<li>Groovy</li>
+    				<li>Rust</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(3)</span></h2>
       </header>
-      <section id="contact">
-        <h3>Contact</h3>
-        <div class="grid-list">
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:richard.batusai@gmail.com">richard.batusai@gmail.com</a>
+    
+      <section id="work">
+        <section class="work-item">
+    
+          <label for="work-item-0"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Oct 2018</span>
+              <span class="endDate">- Current</span>
             </div>
-            <div>
-              <h4>Phone</h4>
-              (+49) 01525-6841771
-            </div>
-        </div>
-      </section>
-        <section id="about">
-          <h3>About</h3>
-          <article>
-            <p>A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges.</p>
-          </article>
-        </section>
-        <section id="profiles">
-          <h3>Profiles</h3>
-          <div class="grid-list">
-              <div>
-                  <h4>GitHub</h4>
-                    <a href="https://github.com/batusai513">batusai513</a>
-              </div>
-              <div>
-                  <h4>Twitter</h4>
-                    <a href="https://twitter.com/Sr_Batusai">Sr_Batusai</a>
-              </div>
-              <div>
-                  <h4>LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/richard-roncancio-6034b651/">richard-roncancio</a>
-              </div>
+            <div class="position">Sr. Front end Developer</div>
+            <div class="company">Auto1</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Berlin,</span>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.auto1.com/en/home">https://www.auto1.com/en/home</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p>Among my responsabilities I have to work on new features for all the applications in the http://wirkaufendeinauto.de spectrum and the internal tools, analyze and optimize the performance and load times and general bug fixing.</p></div>
+            <ul class="highlights">
+              <li><p>Lead the slim funnels initiative to migrate our old framework and tools to build form funnels for A/B experiments to a more flexible codebase. This new codebase resulted in a decrease of the development time invested in creating new experiments and funnels and a reduction of about 60% smaller bundle size of the generated pages</p></li>
+              <li><p>Lead the migration of our newer codebases (2 monorepos and about 30 packages) from vanilla Javascript to Typescript, resulting in having up to date code, less runtime errors, code editor autocomplete and overall a much better developer experience</p></li>
+              <li><p>Migrated one of our more complicated codebases and logic used by our main user facing forms to a finite state machine (statechart), this process involved analysing the previous implementation and logic, design and implement the machine using Xstate, build components (form, fields, etc) backed by this new machine. This end up in a more flexible form that allows to add/remove fields in a more simple way</p></li>
+              <li><p>General maintanance of our codebases, updating runtimes and external packages to be up to date, optimisations of our bundler (webpack) configurations to make our JS and CSS bundles as smaller as they can be</p></li>
+              <li><p>Designed and built our design system based on React components and SASS stylesheets using BEM naming convention, and PostCSS configurations with PurgeCSS on the application side to remove unused CSS, this resulted in about 60% smaller css bundles</p></li>
+              <li><p>Designed and built CLI tools to increase the developer experience and efficiency by automating several repeating tasks</p></li>
+              <li><p>Helped built the new user account dashboard, a completely new React and GraphQL application with localization and internationalization.</p></li>
+              <li><p>Implemented user authentication and authorization using JWT access and refresh tokens</p></li>
+              <li><p>Analize the current application and SEO pages and look for opportunities to optimize performance, load times and and time to interactive leading to several tweaks to the webpack that shrinked the bundle sizes by almost 50%, removed unused JS and css and implementing responsive images strategies.</p></li>
+            </ul>
           </div>
         </section>
-
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Auto1</h4>
-                  <span>
-                    <time datetime="2018-10-15">Oct 2018</time> –
-                    Present
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Sr. Front end Developer</strong>
-                </div>
-              </header>
-                <p>Among my responsabilities I have to work on new features for all the applications in the http://wirkaufendeinauto.de spectrum and the internal tools, analyze and optimize the performance and load times and general bug fixing.</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>Lead the slim funnels initiative to migrate our old framework and tools to build form funnels for A/B experiments to a more flexible codebase. This new codebase resulted in a decrease of the development time invested in creating new experiments and funnels and a reduction of about 60% smaller bundle size of the generated pages</li>
-                    <li>Lead the migration of our newer codebases (2 monorepos and about 30 packages) from vanilla Javascript to Typescript, resulting in having up to date code, less runtime errors, code editor autocomplete and overall a much better developer experience</li>
-                    <li>Migrated one of our more complicated codebases and logic used by our main user facing forms to a finite state machine (statechart), this process involved analysing the previous implementation and logic, design and implement the machine using Xstate, build components (form, fields, etc) backed by this new machine. This end up in a more flexible form that allows to add/remove fields in a more simple way</li>
-                    <li>General maintanance of our codebases, updating runtimes and external packages to be up to date, optimisations of our bundler (webpack) configurations to make our JS and CSS bundles as smaller as they can be</li>
-                    <li>Designed and built our design system based on React components and SASS stylesheets using BEM naming convention, and PostCSS configurations with PurgeCSS on the application side to remove unused CSS, this resulted in about 60% smaller css bundles</li>
-                    <li>Designed and built CLI tools to increase the developer experience and efficiency by automating several repeating tasks</li>
-                    <li>Helped built the new user account dashboard, a completely new React and GraphQL application with localization and internationalization.</li>
-                    <li>Implemented user authentication and authorization using JWT access and refresh tokens</li>
-                    <li>Analize the current application and SEO pages and look for opportunities to optimize performance, load times and and time to interactive leading to several tweaks to the webpack that shrinked the bundle sizes by almost 50%, removed unused JS and css and implementing responsive images strategies.</li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Koombea</h4>
-                  <span>
-                    <time datetime="2014-06-15">Jun 2014</time> –
-                    <time datetime="2018-10-01">Oct 2018</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Sr. Front end Developer</strong>
-                </div>
-              </header>
-                <p>My responsibilities are the development of functional user interfaces, integrations with Ruby on Rails using erb and haml, Research and implementation of new technologies for our front end department, training of new front end hires and building full featured client side applications meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>Built our first Mobile Application using React Native</li>
-                    <li>Created a simpler reusable and scalable boilerplate in SCSS by implementing SMACSS method and BEM naming convention; this later became the company&#x27;s default standard.</li>
-                    <li>Acted as Front-end Lead for several client side applications base on frameworks such as React.js. and AngularJS.</li>
-                    <li>Introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.</li>
-                    <li>Helped to evaluate and train several new hires for the front end department.</li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Koombea</h4>
-                  <span>
-                    <time datetime="2012-01-15">Jan 2012</time> –
-                    <time datetime="2014-06-15">Jun 2014</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Jr. Front end Developer</strong>
-                </div>
-              </header>
-                <p>Started as a junior developer my personal goal was to learn as much as possible and apply that knowledge to build functional websites and to create user interfaces for applications.</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>Built several Marketing sites in HTML, CSS and Javsript (JQuery).</li>
-                    <li>Created websites using Wordpress CMS.</li>
-                    <li>Integrated HTML markup to Ruby on Rails Applications using erb and haml.</li>
-                    <li>Created our first responsive site using the latest techniques at the time</li>
-                    <li>Created the baselines for building responsive websites.</li>
-                    <li>Actively researched new tools to integrate into the Front end stack and workflow.</li>
-                </ul>
-            </article>
-        </div>
+        <section class="work-item">
+    
+          <label for="work-item-1"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jun 2014</span>
+              <span class="endDate">- Oct 2018</span>
+            </div>
+            <div class="position">Sr. Front end Developer</div>
+            <div class="company">Koombea</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Barranquilla,</span>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.koombea.com">https://www.koombea.com</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p>My responsibilities are the development of functional user interfaces, integrations with Ruby on Rails using erb and haml, Research and implementation of new technologies for our front end department, training of new front end hires and building full featured client side applications meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.</p></div>
+            <ul class="highlights">
+              <li><p>Built our first Mobile Application using React Native</p></li>
+              <li><p>Created a simpler reusable and scalable boilerplate in SCSS by implementing SMACSS method and BEM naming convention; this later became the company's default standard.</p></li>
+              <li><p>Acted as Front-end Lead for several client side applications base on frameworks such as React.js. and AngularJS.</p></li>
+              <li><p>Introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.</p></li>
+              <li><p>Helped to evaluate and train several new hires for the front end department.</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-2"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2012</span>
+              <span class="endDate">- Jun 2014</span>
+            </div>
+            <div class="position">Jr. Front end Developer</div>
+            <div class="company">Koombea</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Barranquilla,</span>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.koombea.com">https://www.koombea.com</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p>Started as a junior developer my personal goal was to learn as much as possible and apply that knowledge to build functional websites and to create user interfaces for applications.</p></div>
+            <ul class="highlights">
+              <li><p>Built several Marketing sites in HTML, CSS and Javsript (JQuery).</p></li>
+              <li><p>Created websites using Wordpress CMS.</p></li>
+              <li><p>Integrated HTML markup to Ruby on Rails Applications using erb and haml.</p></li>
+              <li><p>Created our first responsive site using the latest techniques at the time</p></li>
+              <li><p>Created the baselines for building responsive websites.</p></li>
+              <li><p>Actively researched new tools to integrate into the Front end stack and workflow.</p></li>
+            </ul>
+          </div>
+        </section>
       </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Volunteer</h2>
+      </header>
       <section id="volunteer">
-        <h3>Volunteer</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>BarranquillaJS</h4>
-                  <span>
-                    <time datetime="2015-03-04">Mar 2015</time> –
-                    <time datetime="2018">Jan 2018</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Founder</strong>
-                </div>
-              </header>
-                <p>Barranquilla's first javascript community for people wanting to learn and share about javascript</p>
-                <h5>Highlights</h5>
-                <ul>
-                    <li>founder and speaker</li>
-                </ul>
-            </article>
-        </div>
+        <section class="volunteer-item">
+    
+          <label for="volunteer-item-0"></label>
+    
+          <header class="clear">
+            <div class="header-left">
+              <div class="position">
+                Founder
+              </div>
+              <div class="organization">
+                BarranquillaJS
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+                Mar 2015
+              </span>
+              <span class="endDate">
+                - Jan 2018
+              </span>
+            </div>
+          </header>
+          <div class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.meetup.com/es-ES/BarranquillaJS/">https://www.meetup.com/es-ES/BarranquillaJS/</a>
+          </div>
+          <div class="item">
+            <div class="summary"><p>Barranquilla's first javascript community for people wanting to learn and share about javascript</p></div>
+            <ul class="highlights">
+              <li><p>founder and speaker</p></li>
+            </ul>
+          </div>
+        </section>
       </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
       <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Universidad Autonoma del Caribe</h4>
-                  <span>
-                    <time datetime="2011-06-15">Jun 2011</time> –
-                    <time datetime="2016-06-30">Jun 2016</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Computer Science Engineering</strong>
-                </div>
-              </header>
-                
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Kyle Simpson</h4>
-                  <span>
-                    <time datetime="2015">Jan 2015</time> –
-                    <time datetime="2016">Jan 2016</time>
-                  </span>
-                </div>
-                <div class="spaced-list">
-                    <strong>Javascript Training</strong>
-                </div>
-              </header>
-                
-                <h5>Courses</h5>
-                <ul>
-                    <li>Rethinking Async, Functional JS and Node Fundamentals</li>
-                    <li>Advanced JavaScript</li>
-                </ul>
-            </article>
-        </div>
+        <section class="education-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="area">
+                Computer Science Engineering
+              </div>
+              <div class="institution">
+                Universidad Autonoma del Caribe
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2011
+              </span>
+              <span class="endDate">
+              - 2016
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="area">
+                Javascript Training
+              </div>
+              <div class="institution">
+                Kyle Simpson
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2015
+              </span>
+              <span class="endDate">
+              - 2016
+              </span>
+            </div>
+          </header>
+    
+    
+          <ul class="courses">
+            <li>Rethinking Async, Functional JS and Node Fundamentals</li>
+            <li>Advanced JavaScript</li>
+          </ul>
+    
+          <div class="item">
+          </div>
+        </section>
       </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Frontend</h4>
-                <ul class="tag-list">
-                    <li>Javascript</li>
-                    <li>Typescript</li>
-                    <li>Browser APIs</li>
-                    <li>React</li>
-                    <li>NextJS</li>
-                    <li>Remix</li>
-                    <li>redux</li>
-                    <li>React Native</li>
-                    <li>Vue.js</li>
-                    <li>Webpack</li>
-                    <li>Vite</li>
-                    <li>Babel</li>
-                    <li>Apolo</li>
-                    <li>Functional Programming</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>BEM</li>
-                    <li>PostCSS</li>
-                    <li>SASS</li>
-                    <li>Tailwind</li>
-                    <li>CSS Architecure</li>
-                    <li>GraphQL</li>
-                    <li>Prisma</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Backend</h4>
-                <ul class="tag-list">
-                    <li>Node</li>
-                    <li>Postgres</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Others</h4>
-                <ul class="tag-list">
-                    <li>JenkinsCI</li>
-                    <li>Docker</li>
-                    <li>Groovy</li>
-                    <li>Rust</li>
-                </ul>
-            </div>
-        </div>
-      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
       <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>English</h4>
-              Advanced
+        <div class="display">
+          <h3 class="language">
+            English
+          </h3>
+          <div class="item">
+            <div class="level fluency advanced">
+              <em>Advanced</em>
+              <div class="bar"></div>
             </div>
-            <div>
-                <h4>Spanish</h4>
-              Native Speaker
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Spanish
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native Speaker</em>
+              <div class="bar"></div>
             </div>
+          </div>
         </div>
       </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
       <section id="interests">
-        <h3>Interests</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Movies</h4>
-            </div>
-            <div>
-                <h4>VideoGames</h4>
-            </div>
-            <div>
-                <h4>Sports</h4>
-            </div>
+        <div class="item">
+          <h3 class="name">
+            Movies
+          </h3>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            VideoGames
+          </h3>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Sports
+          </h3>
         </div>
       </section>
+    </section>
+
   </body>
 </html>
