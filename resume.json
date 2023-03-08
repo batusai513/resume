@@ -34,11 +34,11 @@
   },
   "work": [
     {
-      "company": "Auto1",
+      "name": "Auto1",
       "position": "Sr. Front end Developer",
       "website": "https://www.auto1.com/en/home",
+      "location": "Berlin",
       "startDate": "2018-10-15",
-      "endDate": "ongoing",
       "summary": "Among my responsabilities I have to work on new features for all the applications in the http://wirkaufendeinauto.de spectrum and the internal tools, analyze and optimize the performance and load times and general bug fixing.",
       "highlights": [
         "Lead the slim funnels initiative to migrate our old framework and tools to build form funnels for A/B experiments to a more flexible codebase. This new codebase resulted in a decrease of the development time invested in creating new experiments and funnels and a reduction of about 60% smaller bundle size of the generated pages",
@@ -53,11 +53,12 @@
       ]
     },
     {
-      "company": "Koombea",
+      "name": "Koombea",
       "position": "Sr. Front end Developer",
       "website": "https://www.koombea.com",
+      "location": "Barranquilla",
       "startDate": "2014-06-15",
-      "endDate": "2018",
+      "endDate": "2018-10-01",
       "summary": "My responsibilities are the development of functional user interfaces, integrations with Ruby on Rails using erb and haml, Research and implementation of new technologies for our front end department, training of new front end hires and building full featured client side applications meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.",
       "highlights": [
         "Built our first Mobile Application using React Native",
@@ -68,9 +69,10 @@
       ]
     },
     {
-      "company": "Koombea",
+      "name": "Koombea",
       "position": "Jr. Front end Developer",
       "website": "https://www.koombea.com",
+      "location": "Barranquilla",
       "startDate": "2012-01-15",
       "endDate": "2014-06-15",
       "summary": "Started as a junior developer my personal goal was to learn as much as possible and apply that knowledge to build functional websites and to create user interfaces for applications.",
@@ -123,7 +125,7 @@
   "skills": [
     {
       "name": "Frontend",
-      "level": "Senior",
+      "level": "Advanced",
       "keywords": [
         "Javascript",
         "Typescript",

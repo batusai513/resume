@@ -1,489 +1,486 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-<title>Richard Roncancio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Richard Roncancio</title>
+    <meta name="description" content="A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
 }
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
 a {
-	color: #2ecc71;
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
 }
+
 a:focus,
 a:hover {
-	color: #f1c40f;
-	text-decoration: none;
+  color: var(--accentColor);
 }
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
+
 h1,
 h2,
 h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
 h4 {
-	margin-top: 0
+  font-size: var(--scale2);
 }
-section {
-	margin-top: 30px;
+
+h5 {
+  font-size: var(--scale1);
 }
-li {
-	line-height: 1.8;
-	list-style: none;
+
+h6 {
+  font-size: var(--scale0);
 }
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
+
 blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
 }
 
-	</style>
-</head>
-<body>
-<header id="header">
-<div class="container">
-<div class="row">
-<div class="col-sm-9 col-sm-push-3">
-<h1>
-Richard Roncancio
-</h1>
-<h2>
-Front end Developer
-</h2>
-</div>
-</div>
-</div>
-</header>
-<div id="content" class="container">
-<section id="contact" class="row">
-<aside class="col-sm-3">
-<h3>Contact</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-6">
-<strong>Email</strong>
-<div class="email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f6849f959e978492d89497828385979fb6919b979f9ad895999b">[email&#160;protected]</a></div>
-</div>
-<div class="col-sm-6">
-<strong>Phone</strong>
-<div class="phone">(+57) 301 5000 301</div>
-</div>
-<div class="col-sm-6">
-<strong>Website</strong>
-<div class="website">
-<a href=""></a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="about" class="row">
-<aside class="col-sm-3">
-<h3>About</h3>
-</aside>
-<div class="col-sm-9">
-<p>Computer science engineer with 6+ years of experience in front end development with a deep knowledge in html, css and the javascript programming language. I enjoy learning as much as possible, share the knowledge with other team members and solve hard to solve problems in order to meet the user requirements.</p>
-</div>
-</section>
-<section id="profiles" class="row">
-<aside class="col-sm-3">
-<h3>Profiles</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-6">
-<strong class="network">
-Twitter
-</strong>
-<div class="username">
-<div class="url">
-<a href="https://twitter.com/Sr_Batusai">Sr_Batusai</a>
-</div>
-</div>
-</div>
-<div class="col-sm-6">
-<strong class="network">
-SoundCloud
-</strong>
-<div class="username">
-<div class="url">
-<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="work" class="row">
-<aside class="col-sm-3">
-<h3>Work</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>Koombea</span>
-<span class="date">
-2011-06-01 — present
-</span>
-</h4>
-<div class="website pull-right">
-<a href="http://www.koombea.com">http://www.koombea.com</a>
-</div>
-<div class="position">
-Front end Developer
-</div>
-<div class="summary">
-<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
-</div>
-<h4>Highlights</h4>
-<ul class="highlights">
-<li class="bullet">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
-<li class="bullet">Successfully won Techcrunch Disrupt</li>
-<li class="bullet">Optimized an algorithm that holds the current world record for Weisman Scores</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="volunteer" class="row">
-<aside class="col-sm-3">
-<h3>Volunteer</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>CoderDojo</span>
-<span class="date">
-2012-01-01 — 2013-01-01
-</span>
-</h4>
-<div class="website pull-right">
-<a href="http://coderdojo.com/">http://coderdojo.com/</a>
-</div>
-<div class="position">
-Teacher
-</div>
-<div class="summary">
-<p>Global movement of free coding clubs for young people.</p>
-</div>
-<h4>Highlights</h4>
-<ul class="highlights">
-<li class="bullet">Awarded &#x27;Teacher of the Month&#x27;</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="education" class="row">
-<aside class="col-sm-3">
-<h3>Education</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>University of Oklahoma</span>
-<span class="date">
-2011-06-01 — 2014-01-01
-</span>
-</h4>
-<div class="area">
-Information Technology
-</div>
-<div class="studyType">
-Bachelor
-</div>
-<h4>Courses</h4>
-<ul class="courses">
-<li>DB1101 - Basic SQL</li>
-<li>CS2011 - Java Introduction</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="awards" class="row">
-<aside class="col-sm-3">
-<h3>Awards</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>Digital Compression Pioneer Award</span>
-</h4>
-<div class="date pull-right">
-<em>Awarded</em>
-2014-11-01
-</div>
-<div class="awarder">
-<em>by</em>
-<strong>Techcrunch</strong>
-</div>
-<div class="summary">
-There is no spoon.
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="publications" class="row">
-<aside class="col-sm-3">
-<h3>Publications</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="strike-through">
-<span>Video compression for 3d media</span>
-<span class="date">
-2014-10-01
-</span>
-</h4>
-<div class="website pull-right">
-<a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"></a>
-</div>
-<div class="publisher">
-<em>Published by</em>
-<strong>Hooli</strong>
-</div>
-<div class="summary">
-<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="skills" class="row">
-<aside class="col-sm-3">
-<h3>Skills</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-6">
-<div class="name">
-<h4>Web Development</h4>
-</div>
-<ul class="keywords">
-<li>HTML</li>
-<li>CSS</li>
-<li>Javascript</li>
-</ul>
-</div>
-<div class="col-sm-6">
-<div class="name">
-<h4>Compression</h4>
-</div>
-<ul class="keywords">
-<li>Mpeg</li>
-<li>MP4</li>
-<li>GIF</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="languages" class="row">
-<aside class="col-sm-3">
-<h3>Languages</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-6">
-<div class="language">
-<strong>English</strong>
-</div>
-<div class="fluency">
-Native speaker
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="interests" class="row">
-<aside class="col-sm-3">
-<h3>Interests</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-6">
-<div class="name">
-<h4>Wildlife</h4>
-</div>
-<ul class="keywords">
-<li>Ferrets</li>
-<li>Unicorns</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="references" class="row">
-<aside class="col-sm-3">
-<h3>References</h3>
-</aside>
-<div class="col-sm-9">
-<div class="row">
-<div class="col-sm-12">
-<blockquote class="reference">
-<p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
-<p class="name">
-<strong>— Erlich Bachman</strong>
-</p>
-</blockquote>
-</div>
-</div>
-</div>
-</section>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script></body>
+cite::before {
+  content: '— ';
+}
+
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Richard Roncancio</h1>
+          <h2>Systems engineer</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:richard.batusai@gmail.com">richard.batusai@gmail.com</a>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              (+49) 01525-6841771
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>A professional software engineer with 12+ years of experience in web development (mostly frontend) building applications and solving hard problems based on client and end users requirements with a deep knowledge in html, css, javascript and components based frameworks like React. I enjoy learning, sharing knowledge and working in exciting new challenges.</p>
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>GitHub</h4>
+                    <a href="https://github.com/batusai513">batusai513</a>
+              </div>
+              <div>
+                  <h4>Twitter</h4>
+                    <a href="https://twitter.com/Sr_Batusai">Sr_Batusai</a>
+              </div>
+              <div>
+                  <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/richard-roncancio-6034b651/">richard-roncancio</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Auto1</h4>
+                  <span>
+                    <time datetime="2018-10-15">Oct 2018</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Sr. Front end Developer</strong>
+                </div>
+              </header>
+                <p>Among my responsabilities I have to work on new features for all the applications in the http://wirkaufendeinauto.de spectrum and the internal tools, analyze and optimize the performance and load times and general bug fixing.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Lead the slim funnels initiative to migrate our old framework and tools to build form funnels for A/B experiments to a more flexible codebase. This new codebase resulted in a decrease of the development time invested in creating new experiments and funnels and a reduction of about 60% smaller bundle size of the generated pages</li>
+                    <li>Lead the migration of our newer codebases (2 monorepos and about 30 packages) from vanilla Javascript to Typescript, resulting in having up to date code, less runtime errors, code editor autocomplete and overall a much better developer experience</li>
+                    <li>Migrated one of our more complicated codebases and logic used by our main user facing forms to a finite state machine (statechart), this process involved analysing the previous implementation and logic, design and implement the machine using Xstate, build components (form, fields, etc) backed by this new machine. This end up in a more flexible form that allows to add/remove fields in a more simple way</li>
+                    <li>General maintanance of our codebases, updating runtimes and external packages to be up to date, optimisations of our bundler (webpack) configurations to make our JS and CSS bundles as smaller as they can be</li>
+                    <li>Designed and built our design system based on React components and SASS stylesheets using BEM naming convention, and PostCSS configurations with PurgeCSS on the application side to remove unused CSS, this resulted in about 60% smaller css bundles</li>
+                    <li>Designed and built CLI tools to increase the developer experience and efficiency by automating several repeating tasks</li>
+                    <li>Helped built the new user account dashboard, a completely new React and GraphQL application with localization and internationalization.</li>
+                    <li>Implemented user authentication and authorization using JWT access and refresh tokens</li>
+                    <li>Analize the current application and SEO pages and look for opportunities to optimize performance, load times and and time to interactive leading to several tweaks to the webpack that shrinked the bundle sizes by almost 50%, removed unused JS and css and implementing responsive images strategies.</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Koombea</h4>
+                  <span>
+                    <time datetime="2014-06-15">Jun 2014</time> –
+                    <time datetime="2018-10-01">Oct 2018</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Sr. Front end Developer</strong>
+                </div>
+              </header>
+                <p>My responsibilities are the development of functional user interfaces, integrations with Ruby on Rails using erb and haml, Research and implementation of new technologies for our front end department, training of new front end hires and building full featured client side applications meeting user requirements in creative, efficient, intuitive and aesthetically pleasing ways.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Built our first Mobile Application using React Native</li>
+                    <li>Created a simpler reusable and scalable boilerplate in SCSS by implementing SMACSS method and BEM naming convention; this later became the company&#x27;s default standard.</li>
+                    <li>Acted as Front-end Lead for several client side applications base on frameworks such as React.js. and AngularJS.</li>
+                    <li>Introduced several new technologies and frameworks to our front end stack including SASS, Backbone.js, emberjs, angularjs, Reactjs, vuejs and new tooling such as Babel js and among others.</li>
+                    <li>Helped to evaluate and train several new hires for the front end department.</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Koombea</h4>
+                  <span>
+                    <time datetime="2012-01-15">Jan 2012</time> –
+                    <time datetime="2014-06-15">Jun 2014</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Jr. Front end Developer</strong>
+                </div>
+              </header>
+                <p>Started as a junior developer my personal goal was to learn as much as possible and apply that knowledge to build functional websites and to create user interfaces for applications.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Built several Marketing sites in HTML, CSS and Javsript (JQuery).</li>
+                    <li>Created websites using Wordpress CMS.</li>
+                    <li>Integrated HTML markup to Ruby on Rails Applications using erb and haml.</li>
+                    <li>Created our first responsive site using the latest techniques at the time</li>
+                    <li>Created the baselines for building responsive websites.</li>
+                    <li>Actively researched new tools to integrate into the Front end stack and workflow.</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="volunteer">
+        <h3>Volunteer</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>BarranquillaJS</h4>
+                  <span>
+                    <time datetime="2015-03-04">Mar 2015</time> –
+                    <time datetime="2018">Jan 2018</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Founder</strong>
+                </div>
+              </header>
+                <p>Barranquilla's first javascript community for people wanting to learn and share about javascript</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>founder and speaker</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Universidad Autonoma del Caribe</h4>
+                  <span>
+                    <time datetime="2011-06-15">Jun 2011</time> –
+                    <time datetime="2016-06-30">Jun 2016</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Computer Science Engineering</strong>
+                </div>
+              </header>
+                
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Kyle Simpson</h4>
+                  <span>
+                    <time datetime="2015">Jan 2015</time> –
+                    <time datetime="2016">Jan 2016</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Javascript Training</strong>
+                </div>
+              </header>
+                
+                <h5>Courses</h5>
+                <ul>
+                    <li>Rethinking Async, Functional JS and Node Fundamentals</li>
+                    <li>Advanced JavaScript</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Frontend</h4>
+                <ul class="tag-list">
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>Browser APIs</li>
+                    <li>React</li>
+                    <li>NextJS</li>
+                    <li>Remix</li>
+                    <li>redux</li>
+                    <li>React Native</li>
+                    <li>Vue.js</li>
+                    <li>Webpack</li>
+                    <li>Vite</li>
+                    <li>Babel</li>
+                    <li>Apolo</li>
+                    <li>Functional Programming</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BEM</li>
+                    <li>PostCSS</li>
+                    <li>SASS</li>
+                    <li>Tailwind</li>
+                    <li>CSS Architecure</li>
+                    <li>GraphQL</li>
+                    <li>Prisma</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend</h4>
+                <ul class="tag-list">
+                    <li>Node</li>
+                    <li>Postgres</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Others</h4>
+                <ul class="tag-list">
+                    <li>JenkinsCI</li>
+                    <li>Docker</li>
+                    <li>Groovy</li>
+                    <li>Rust</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              Advanced
+            </div>
+            <div>
+                <h4>Spanish</h4>
+              Native Speaker
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Movies</h4>
+            </div>
+            <div>
+                <h4>VideoGames</h4>
+            </div>
+            <div>
+                <h4>Sports</h4>
+            </div>
+        </div>
+      </section>
+  </body>
 </html>
